@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link href="About_us.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    .question {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 180px;
+    }
+
+    .active, .question:hover {
+     background-color: #ccc; 
+    }
+
+    .answer {
+    padding-left: 150px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    }
+    </style>
+
+</head>
+
+<body>
+   <title>About Us</title>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="english.html">En</a> / </li>
+                <li><a href="chinease.html">Ch</a></li>
+                <li><a href="index.html">Sign In</a></li>
+                <li><a href="signin.html">Log In</a></li>
+            </ul>               
+        </nav>   
+        
+        <div class="container">
+
+            <div id="branking">
+                <h1><span class="highlight"></span>Stores</h1>
+            </div>
+             
+        </div>
+       
+        <div class="topnav">
+            <a href="#">Home Page</a>
+            <a href="#">Author</a>
+            <a href="#">Location</a>
+            <a href="#">Ranking</a>
+            <a href="#">Promotion</a>
+            <a href="#">Categories</a>
+            <a href="#">About Us</a>
+        </div>
+    </header>
+    s
+   <div style="background-image:url(unnamed.jpg);background-repeat: no-repeat;width: 1600px;height: 500px;padding-left: 300px;padding-top: 20px;">
+       <h1 id="title" style="font-size: 50px;">Welcome To Golden House Let's Learn About Us!!</h1>
+   </div>
+
+   <section class="Intro">
+        <img style="width: 250px;height:100px;margin-left: 350px;" src="About_us_img.png" alt="About_Us">
+        <img id="logo" style="width: 300px;height:300px;border: 15px double;" src="LOGO.jpeg" alt="LOGO"><br>  
+        <i id="logo">Company Logo Of Golden House Book Store</i><br><br>
+       
+    </section>
+    
+    <h1>Our Story</h1>
+    <article>
+       <p> 
+        <i style="float: right;padding-left:15px;margin-right: 40px;;"><img style="float: right;width: 300px;border: 2px solid black;" 
+            src="KL_Main_Brunch.jpg" alt="Main Brunch"><br>First Brunch of Golden House</i>
+        At <b>1995</b>,Our Director,<strong>Lee Kiat Boon</strong> stared his first store at Kuala Lumpur with 
+        a small store that only sell a little type of books and stationery.Start of the buiness,Mr Lee only can 
+        got his book suplies from Johor that remoted from store.He need to drive for 3 hours every week.We can 
+        felt that Mr Lee's road as a buinessman.After his unremitting efforts，the small book store has became 
+        in right way.Mr Lee had opened a second brunch at Pahang and soon Pinang in 2000 and 2002.Besides,he
+         also surcessful to cooperate with some company and agency such as,Popular Book Store,National Library,
+         school and public libaries.In 2005,Mr Lee made a significant decision,that was Mr Lee wanted to expand  
+        the market to other country and not only at domestic.However,this decision was combated by family members 
+        and other cooperate company as this was too risky on the time,but he believe himselff and take over it.
+        He and his shop managers took a risk by got a huge loan from Maybank to open a brunch at Singapura.The 
+        Singapor Brunch was completed and opened.As the saying goes,Heaven will not disappoint the person who 
+        tries.He got his first million on his whole life. Those company that didn't Optimistic about him start 
+        to invest to his <br>store.Mr Lee also turned their operation mode from a single store to group company 
+        named,<br><strong>Golden House Group Company.</strong>
+       </p>    
+      
+    </article>
+   
+
+        <h1>QNA Section</h1>
+
+        <button class="question">1.Can I buy some book without sign in as member??</button>
+        <div class="answer">
+            <blockquote><b>ANS:</b> Sure,You can buy books without sign in.</blockquote>
+        </div>
+
+        <button class="question">2.What is the benefit of sign in as members?</button>
+        <div class="answer">
+            <blockquote><b>ANS:</b>You can crate your profile for society.You can also share your reading experiences on comment part and able to join community in this website.</blockquote>
+        </div>
+
+        <button class="question">3.How do I pay the money??</button>
+        <div class="answer">
+            <blockquote><b>ANS:</b>You can pay trade by using E-wallet,Credit/Debit Card,Paypal or cash on delivery</blockquote>
+        </div>
+
+        <button class="question">4.How Can I get refund from buyer if I don't get my book?</button>
+        <div class="answer">
+            <blockquote><b>ANS:</b>You can contact to buyer for getting back the payment.If any question can directly contact to our customer services.</blockquote>
+        </div> 
+    <!--Javascrip for QNA-->
+    <script>
+        var acc = document.getElementsByClassName("question");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var answer = this.nextElementSibling;
+            if (answer.style.display === "block") {
+              answer.style.display = "none";
+            } else {
+              answer.style.display = "block";
+            }
+          });
+        }
+    </script>
+
+    <h1>Company Target</h1>
+    <div id="Target">
+        <b><q>This year we will get a 10 brunch and reach 300  workers for this year.Besides that,we target to score 40 million ringgit Malaysia as yearly profit in 2020 year.</q></b>
+        <p>Above was the speech by Golden House's Director Mr Lee when Annual Ceremony November 2019.Besides,Director also have a final target is to get the company up until international level and have international buiness.</p>
+        <ol>
+            <p>Target List:</p>
+            <li>Getting 10 brunch<br><span>&#8669</span>(Keeping Going...)---left 5 brunch</li>
+            <li>Get 300 workers<br><span>&#8669</span>(Keeping Going...)</li>
+            <li>Reach 40 million<br><span>&#8669</span>(Keeping Going...)</li>
+        </ol>
+    </div>
+    <h1 style=" margin-left: 500px;">Meet Our Team</h1>
+    <div id="OurTeam">
+        <div style="background-color:gold;height: 300px;">
+            <p style="padding: 20px;font-size: x-large;">Director/CEO of Golden House<img style="float: left; margin-right: 50px; margin-left: 20px;border: 2px solid rgb(59, 52, 52);" src="bossku.jpeg" alt="Director"><br>Dr. Lee Boon Kiat</p>
+            <ul id="description">
+                <li>Birthed in 1975 year</li>
+                <li>Honorly graduated from University of Oxford</li>
+                <li>Finished the study as Master holder in Economics</li>
+                <li>Awarded Top 10 Youngest Buinessman in 2005,2006</li>
+                <li>Awarded The Fastest Growth Of Group Company at ASIAN in 2004 </li>
+                <li>In peak period,Mr Lee was invited as Lecture up to 300 times per year at many countries,such as <br>Singapura,China,UK,Austaria,and Thailand.</li>
+        </div>
+        <div style="background-color:gold;height: 300px;width: 3000px;">
+            <p style="padding: 15px;font-size: x-large;">Project Leader of Golden House<img style="float: left; margin-right: 50px; margin-left: 20px;border: 2px solid rgb(59, 52, 52);" src="mainprogrammer.jpeg" alt="Director"><br>Mr. Niger Tan</p>
+            <ul id="description">
+                <li>Birthed in 2002 year</li>
+                <li>Honorly graduated from University Tunku Abdul Rahman</li>
+                <li>Finished the study as Degree holder in Computer Science</li>
+                <li>Website creator of Golden House</li>
+                <li>Awared Champion in Web Design and Development at Malaysia and Singapura.</li>
+                <li>Owner of Niger Programming's Team</li>
+        </div>
+        <div id="worker">
+            <div id="brunchleader">
+                <div style="margin-left: 60px;-top: 30px;padding-bottom:30px ; background-color: yellow;">
+                <img style="" src="worker1.jpeg" alt="worker">
+                <img style=""src="worker2.jpeg" alt="worker">
+                <img style=""src="worker3.jpeg" alt="worker">
+                <img style=""src="worker4.jpeg" alt="worker">
+                <img style=""src="worker5.jpeg" alt="worker">
+                <strong style="padding-left:5px;">Manager of Kuala Lumpur Brunch</strong>
+                <strong style="padding-left:25px;">Manager of Pahang Brunch</strong>
+                <strong style="padding-left:25px;">Manager of Pinang Brunch</strong>
+                <strong style="padding-left:25px;">Manager of Singapura Brunch</strong>
+                <strong style="padding-left:5px;">Manager of Kuching Brunch</strong>
+            </div>
+        </div>
+    </div>
+
+    <section id="">
+        <h1 style="width: 300px;">Job Recruitment</h1>
+        <p style="padding-left: 250px;">Now is your chance to join Golden House Company!!We now decided to hire some pubilcs
+        to hold positions<br>(Click the link to get the each position Aplication Form)</p>
+        <ol id="JobRecruitment" style="padding-left: 350px;">
+            <li><a href="#">Managers</a> </li>
+            <li><a href="#">Assistants Manager</a> </li>
+            <li><a href="#">Secutary</a> </li>
+            <li><a href="#"> Casher</a></li>
+            <li><a href="#">Waiter/Waitress</a> </li>
+            <li><a href="#">Drivers</a></li>
+        </ol>
+        <p style="padding-left: 200px;">After Filling up the form please send the form thought Email:<a href="HRGoldenHouse@gmail.com">HRGoldenHouse@gmail.com</a></a></p>
+    <a href="#" id="interested" style="margin-left: 500px;">Do you interested to work on Golden House??</a>
+
+    </section>
+    
+
+    <footer>
+        <div class="foot">
+            <ul>
+                <li><strong><u>BD BOOK Online</u></strong></li>
+                <br>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Term & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Outlet Directory</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+    
+            <ul>
+                <li><strong><u>Customer Service</u></strong></li>
+                <br>
+                <li><a href="#">HELP/FAQ</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+    
+            <ul>
+                <li><strong><u>Join Us</u></strong></li>
+                <li><a href="#">Membership</a></li>
+                <br>
+                <li><strong><u>BD BOOK Social Media</u></strong></li>
+                <div style="word-spacing: 15px;padding-top: 10px;">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube fa-2x"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="https://twitter.com/login?lang=en"><i class="fa fa-twitter fa-2x"></i></a>
+                </div>
+            </ul>
+    
+            <ul>
+                <li><strong><u>Payment Method</u></strong></li>
+                <div style="word-spacing: 15px;padding-top: 10px;line-height: 40px;">
+                    <a href="#"></a><i class="fa fa-cc-visa fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-mastercard fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-amex fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-alipay fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-paypal fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-jcb fa-2x"></i>
+                    <a href="#"></a><i class="fa fa-cc-discover fa-2x"></i>
+                </div>
+            </ul>
+    
+        </div>
+    </footer>
+</body>
+</html>
